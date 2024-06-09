@@ -58,7 +58,6 @@ button {
 
 .container {
   display: flex;
-  flex: 1;
   flex-direction: column;
 }
 
@@ -88,12 +87,14 @@ button {
 }
 
 #linksright {
+  flex: 1;
   flex-direction: row;
   justify-content: right;
   gap: 20px;
 }
 
 #linksleft {
+  flex: 1;
   justify-content: left;
   align-items: top;
 }
@@ -134,10 +135,6 @@ button {
   text-align: right;
 }
 
-#buttons {
-  max-width: 100px;
-}
-
 #inspiring {
   background-color: #E5E7EB;
   padding-left: 18%;
@@ -147,8 +144,6 @@ button {
 }
 
 #call {
-  justify-content: center;
-  align-items: center;
   padding-left: 18%;
   padding-right: 18%;
   padding-bottom: 8%;
@@ -156,17 +151,13 @@ button {
 }
 
 #pop {
+  flex-grow: 1;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #3882F6;
   border-radius: 5px;
-  max-width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  gap: 15px;
+  padding: 20px;
 }
 
 .roboto-thin {
